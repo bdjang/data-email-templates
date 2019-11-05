@@ -8,23 +8,23 @@ One method to display data tables in email templates with hover interactivity in
 
 ```css
 <style type="text/css">
-	.row1:hover,
-	.row1:hover + td,
-	.row1:hover + td + td,
-	.row1:hover + td + td + td {
-        background-color: #fb7d7a !important;
-    }
+  .row1:hover,
+  .row1:hover + td,
+  .row1:hover + td + td,
+  .row1:hover + td + td + td {
+    background-color: #fb7d7a !important;
+  }
 </style>
 ```
 
 ```html
 <table>
-	<tr>
-		<td class="row1">Row #1</td>
-		<td>Monday, Feb 1</td>
-		<td>Tuesday, Feb 2</td>
-		<td>Monday, Feb 8</td>
-	</tr>
+  <tr>
+    <td class="row1">Row #1</td>
+    <td>Monday, Feb 1</td>
+    <td>Tuesday, Feb 2</td>
+    <td>Monday, Feb 8</td>
+  </tr>
 </table>
 ```
 
@@ -40,12 +40,12 @@ For Outlook.com, the class must be followed by an HTML element. It cannot be `cl
 
 ```html
 <table>
-	<tr class="outlookRow1">
-		<td>Row #1</td>
-		<td>Monday, Feb 1</td>
-		<td>Tuesday, Feb 2</td>
-		<td>Monday, Feb 8</td>
-	</tr>
+  <tr class="outlookRow1">
+    <td>Row #1</td>
+    <td>Monday, Feb 1</td>
+    <td>Tuesday, Feb 2</td>
+    <td>Monday, Feb 8</td>
+  </tr>
 </table>
 ```
 
@@ -55,7 +55,7 @@ In order to create this interactivity effect in devices using iOS, add an empty 
 
 ```html
 <td>
-	<a href="#">Row #1</a>
+  <a href="#">Row #1</a>
 </td>
 ```
 
