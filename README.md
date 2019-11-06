@@ -4,6 +4,8 @@
 
 ## Background
 
+![Demo of table interactivity](https://user-images.githubusercontent.com/6575035/68261959-c520ec00-000f-11ea-83a2-8d9bec653f4e.gif)
+
 One method to display data tables in email templates with hover interactivity involves using HTML tables and the CSS adjacent sibling selectors (+). This method targets Gmail webmail and Yahoo! Mail clients.
 
 ```css
@@ -34,7 +36,7 @@ For Outlook.com, the class must be followed by an HTML element. It cannot be `cl
 
 ```css
 .outlookRow1 td:hover {
-    background-color: #fb7d7a !important;
+  background-color: #fb7d7a !important;
 }
 ```
 
