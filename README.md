@@ -4,9 +4,11 @@
 
 ## Background
 
+Displaying data in email templates is relatively straight forward by using `<table>` elements. To take it a step further, you can add some hover states and interactivity.
+
 ![Demo of table interactivity](https://user-images.githubusercontent.com/6575035/68261959-c520ec00-000f-11ea-83a2-8d9bec653f4e.gif)
 
-One method to display data tables in email templates with hover interactivity involves using HTML tables and the CSS adjacent sibling selectors (+). This method targets Gmail webmail and Yahoo! Mail clients.
+One method to display interactive data tables in email templates involves the CSS adjacent sibling selectors (+). This method targets Gmail webmail and Yahoo! Mail clients.
 
 ```css
 <style type="text/css">
@@ -32,7 +34,7 @@ One method to display data tables in email templates with hover interactivity in
 
 ## Extending Interactivity to Outlook.com
 
-For Outlook.com, the class must be followed by an HTML element. It cannot be `class:hover` or `id:hover`.
+For Outlook.com, the targeted class must be followed by an HTML element. It cannot be `class:hover` or `id:hover`.
 
 ```css
 .outlookRow1 td:hover {
