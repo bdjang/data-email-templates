@@ -4,7 +4,7 @@
 
 ## Background
 
-Displaying data in email templates is relatively straight forward by using `<table>` elements. To take it a step further, you can add some hover states and interactivity.
+Displaying data in email templates is relatively straight forward by using `<table>` elements. To take it a step further, you can add some hover states and interactive effects.
 
 ![Demo of table interactivity](https://user-images.githubusercontent.com/6575035/68261959-c520ec00-000f-11ea-83a2-8d9bec653f4e.gif)
 
@@ -34,7 +34,7 @@ One method to display interactive data tables in email templates uses CSS adjace
 
 ## Extending Interactivity to Outlook.com
 
-To create this interactivity effect in Outlook.com, add a class to the `<tr>` and target the individual `<td>` through that class. Note: Using `class:hover` or `id:hover` does not work to create this effect in this email client.
+To create this interactive effect in Outlook.com, add a class to the `<tr>` and target the individual `<td>` cell through that class. Using `class:hover` or `id:hover` does not work with this effect in Outlook.com.
 
 ```css
 .outlookRow1 td:hover {
@@ -55,11 +55,15 @@ To create this interactivity effect in Outlook.com, add a class to the `<tr>` an
 
 ## Extending Interactivity to iOS Mail
 
-In order to create this interactivity effect in devices using iOS Mail, add an empty anchor tag in each table cell. This will allow iOS users to "click" and trigger the hover state.
+In order to create this interactive effect in devices using iOS Mail, add an empty anchor tag in each `<td>` cell. This will allow iOS users to "click" individual `<td>` cells and trigger the hover state.
 
 ```html
-<td>
-  <a href="#">Row #1</a>
-</td>
+<table>
+  <tr>
+    <td><a href="#">Row #1</a></td>
+    <td><a href="#">Monday, Feb 1</a></td>
+    <td><a href="#">Tuesday, Feb 2</a></td>
+    <td><a href="#">Monday, Feb 8</a></td>
+  </tr>
+</table>
 ```
-
