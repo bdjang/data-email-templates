@@ -8,7 +8,7 @@ Displaying data in email templates is relatively straight forward by using `<tab
 
 ![Demo of table interactivity](https://user-images.githubusercontent.com/6575035/68261959-c520ec00-000f-11ea-83a2-8d9bec653f4e.gif)
 
-One method to display interactive data tables in email templates uses CSS adjacent sibling selectors (+). This method works in **Gmail webmail** and **Yahoo! Mail** clients.
+One method to display interactive data tables in email templates uses CSS [adjacent sibling combinators (+)](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator). This method works in **Gmail webmail** and **Yahoo! Mail** clients.
 
 ```css
 <style type="text/css">
